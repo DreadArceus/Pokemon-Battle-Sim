@@ -1,0 +1,6 @@
+Dark Pulse/16/1/080/100
+Thunder/12/1/110/070
+Nasty Plot/16/2/000/000
+Hypnosis/13/2/000/060
+Oblivion Wing/02/1/080/100
+U-turn/06/0/070/100
