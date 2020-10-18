@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/dreadarceus/github/Pokemon-Battle-Sim/src/main.hpp
+vector
+-
+
+/Users/dreadarceus/github/Pokemon-Battle-Sim/src/move.cpp
+main.hpp
+/Users/dreadarceus/github/Pokemon-Battle-Sim/src/main.hpp
+move.hpp
+/Users/dreadarceus/github/Pokemon-Battle-Sim/src/move.hpp
+iostream
+-
+fstream
+-
+string
+-
+
+/Users/dreadarceus/github/Pokemon-Battle-Sim/src/move.hpp
+string
+-
+main.hpp
+/Users/dreadarceus/github/Pokemon-Battle-Sim/src/main.hpp
+

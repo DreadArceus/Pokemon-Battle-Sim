@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include"pokemon.hpp"
+#include "main.hpp"
 using namespace std;
 
 class Move

@@ -1,12 +1,13 @@
 //To-Do: Items, Abilities, Status Moves/Modifiers/Conditions, GUI
 #include <iostream>
+#include <string>
 #include <vector>
 #include "main.hpp"
-#include "pokemon.cpp"
-#include "trainer.cpp"
-#include "move.cpp"
+#include "pokemon.hpp"
+#include "trainer.hpp"
 using namespace std;
 
+vector<vector<float>> matchups;
 void inintialise_type_matchups()
 {
     for(int i = 0; i < 18; i++)
@@ -86,7 +87,7 @@ void turn(int t, string command)
     {
         if(command[0] == 'M')
         {
-            ts[t].calc_damage(APs[((t == 0) ? 1 : 0)], command[1] - '0' - 1);
+            ts[t].calc_damage(APs[((t == 0) ? 1 : 0)], command[1] - '0' - 1, matchups);
         }
         if(command[0] == 'S')
         {
@@ -100,7 +101,7 @@ bool faint_check(int t)
 {
     if(APs[t]->get_current_HP() <= 0)
     {
-        cout << "\nFainted, choose next: ";
+        cout << "\nCurrent Pokemon is Fainted, choose another: ";
         int x = 0;
         cin >> x;
         ts[t].switch_active_pokemon(x - 1);

@@ -1,6 +1,8 @@
+#include "main.hpp"
 #include "move.hpp"
-#include <fstream>
 #include <iostream>
+#include <fstream>
+#include <string>
 using namespace std;
 
 Move::Move(string name)

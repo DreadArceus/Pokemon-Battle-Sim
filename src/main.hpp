@@ -1,4 +1,5 @@
 #pragma once
+
 #include <vector>
 #define MAX_PARTY_SIZE 6
 #define LEVEL 50
@@ -28,7 +29,6 @@ enum Type
     Normal, Fighting, Flying, Poison, Ground, Rock, Bug, Ghost, Steel, Fire,
     Water, Grass, Electric, Psychic, Ice, Dragon, Dark, Fairy
 };
-std::vector<std::vector<float>> matchups;
 
 enum Category
 {

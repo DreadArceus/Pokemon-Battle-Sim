@@ -1,7 +1,11 @@
-#include "trainer.hpp"
+#include "main.hpp"
 #include "move.hpp"
+#include "pokemon.hpp"
+#include "trainer.hpp"
 #include <iostream>
 #include <fstream>
+#include <vector>
+#include <string>
 #include <random>
 #include <ctime>
 using namespace std;
@@ -64,7 +68,7 @@ Trainer::Trainer(string input)
     active_pokemon = 0;
 }
 
-void Trainer::calc_damage(Pokemon *defender, int move)
+void Trainer::calc_damage(Pokemon *defender, int move, vector<vector<float>> matchups)
 {
     Move m = Team[active_pokemon].get_move(move);
 

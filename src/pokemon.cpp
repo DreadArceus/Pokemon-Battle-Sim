@@ -1,6 +1,9 @@
+#include "main.hpp"
 #include "pokemon.hpp"
 #include <iostream>
 #include <fstream>
+#include <vector>
+#include <string>
 using namespace std;
 
 Pokemon::Pokemon(string species)
