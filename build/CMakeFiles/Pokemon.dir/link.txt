@@ -1,2 +1,0 @@
-/usr/bin/ar qc libPokemon.a CMakeFiles/Pokemon.dir/src/pokemon.cpp.o
-/usr/bin/ranlib libPokemon.a

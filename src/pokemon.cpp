@@ -10,7 +10,7 @@ Pokemon::Pokemon(string species)
 {
     this->species = species;
 
-    ifstream inp("../data/pokemon.txt");
+    ifstream inp("data/pokemon.txt");
     if(!inp.is_open())
     {
         cout << "Error: Could not find pokemon.txt.\n";
@@ -40,10 +40,12 @@ Pokemon::Pokemon(string species)
         types.push_back((Type)stoi(type_info.substr(3, 2)));
     }
 
-    for(int i = species.length() + 7; i < stat_line.length(); i+=4)
+    for(int i = species.length() + 7; i < stat_line.length() - 4; i+=4)
     {
         base_stats.push_back(stoi(stat_line.substr(i, 3)));
     }
+
+    this->dex_num = stat_line.substr(stat_line.length() - 3, 3);
 }
 
 void Pokemon::calc_final_stats()

@@ -19,6 +19,7 @@ public:
     void calc_final_stats();
 
     string get_species() {return species;}
+    string get_dex_num() {return dex_num;}
     vector<Type> get_types() {return types;}
     vector<int> get_base_stats() {return base_stats;}
     nature get_nature() {return NAT;}
@@ -32,9 +33,10 @@ public:
 
     int get_current_HP() {return current_HP;}
     Move get_move(int num) {return moves[num];}
-    void take_damage(int dmg) {current_HP -= dmg;}
+    void take_damage(int dmg) {current_HP -= ((current_HP > dmg) ? dmg : current_HP);}
 private:
     string species;
+    string dex_num;
     vector<Type> types;
     vector<int> base_stats;
 

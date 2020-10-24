@@ -12,7 +12,7 @@ using namespace std;
 
 Trainer::Trainer(string input)
 {
-    ifstream party("../data/" + input);
+    ifstream party("data/" + input);
     if(!party.is_open())
     {
         cout << "Error: Trainer input file \"" + input + "\" not found.\n";

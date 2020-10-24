@@ -9,7 +9,7 @@ Move::Move(string name)
 {
     this->name = name;
 
-    ifstream inp("../data/moves.txt");
+    ifstream inp("data/moves.txt");
     if(!inp.is_open())
     {
         cout << "Error: Could not find moves.txt.\n";

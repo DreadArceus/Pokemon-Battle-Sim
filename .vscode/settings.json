@@ -1,8 +1,3 @@
 {
-    "files.associations": {
-        "iostream": "cpp",
-        "system_error": "cpp"
-    },
-    "cmake.cmakePath": "/usr/local/Cellar/cmake/3.18.4/bin/cmake",
-    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+    "git.ignoreLimitWarning": true
 }
